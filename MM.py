@@ -36,21 +36,16 @@ def get_initial_data(initials):
 
 # Streamlit app
 def main():
-    
-    # Add header image
-    st.image("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fatc_iq%2F&psig=AOvVaw3VSjCIDhDBAP434t3ANcTy&ust=1732396705684000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPjjgOnu8IkDFQAAAAAdAAAAABAI", caption="ACC Controllers - Training Department", use_column_width=True)
-    
-    # Update title with formatted text
+    st.title("ACC Controllers Info")
     st.markdown("""
     <h1 style='text-align: center; color: #1E90FF;'>ACC CONTROLLERS INFO</h1>
     <h2 style='text-align: center; color: #4682B4;'>Training Department</h2>
     <h3 style='text-align: center; color: #708090;'>ACC Training Unit</h3>
     """, unsafe_allow_html=True)
     
-    # Footer
-    st.markdown("<hr>", unsafe_allow_html=True)
-    st.markdown("<footer><p style='text-align: center;'>Programmed with the holy energy of coffee by MM</p></footer>", unsafe_allow_html=True):
-    
+    # Add header image
+    st.image("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fatc_iq%2F&psig=AOvVaw3VSjCIDhDBAP434t3ANcTy&ust=1732396705684000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPjjgOnu8IkDFQAAAAAdAAAAABAI", caption="ACC Controllers - Training Department", use_column_width=True)
+
     initials = st.text_input("Enter the initials (two letters):").upper()
 
     if st.button("Search"):
@@ -60,6 +55,9 @@ def main():
         else:
             st.write("Please enter exactly two letters.")
 
+    # Footer
+    st.markdown("<hr>", unsafe_allow_html=True)
+    st.markdown("<footer><p style='text-align: center;'>Programmed with the holy energy of coffee by MM</p></footer>", unsafe_allow_html=True)
+
 if __name__ == "__main__":
     main()
-
