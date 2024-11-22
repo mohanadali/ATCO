@@ -35,7 +35,7 @@ def get_initial_data(initials):
         return f"An error occurred: {e}"
 
 # Streamlit app
-def main()
+def main():
     
     # Add header image
     st.image("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fatc_iq%2F&psig=AOvVaw3VSjCIDhDBAP434t3ANcTy&ust=1732396705684000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPjjgOnu8IkDFQAAAAAdAAAAABAI", caption="ACC Controllers - Training Department", use_column_width=True)
